@@ -1,0 +1,55 @@
+body {
+    background-color: rgb(196, 195, 195);    
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+.active {
+    background-color: rgb(68, 67, 67);
+}
+
+.menu {
+    width: 70px;
+    background-color: rgb(138, 136, 136);
+}
+
+.menu a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    transition-property: background-color 1s ease;
+    color: white;
+    position: relative;
+    height: 50px;
+    font-family: sans-serif;
+  }
+
+.menu a:hover{
+    background-color: #ffffff;
+}
+
+.menu a .text {
+    opacity: 0;
+    transition: transform 1s ease;
+    transform: translateX(-100px);
+    height: 50px;
+    padding: 20px 10px 0px 10px;
+    width: 100px;
+  }
+
+.menu a:hover .text {
+    transform: translateX(120px);
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    background-color: #555;
+  }
+
+.credits {
+    padding-left: 20px;
+}
